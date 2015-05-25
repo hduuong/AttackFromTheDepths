@@ -24,7 +24,7 @@ public class Pause : MonoBehaviour {
 			}
 			if(GUI.Button (new Rect(Screen.width/2-100,Screen.height/2-25, 200, 50),"Options"))
 			{
-				
+			
 			}
 			if(GUI.Button (new Rect(Screen.width/2-100,Screen.height/2+50, 200, 50),"Quit to Main Menu"))
 			{
@@ -37,6 +37,7 @@ public class Pause : MonoBehaviour {
 	{
 		if(Input.GetKeyDown(KeyCode.Escape) && !GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().isDead)
 			paused = TogglePause();
+
 	}
 	
 	bool TogglePause()
